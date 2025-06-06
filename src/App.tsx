@@ -6,6 +6,7 @@ import PlusIcon from "./assets/icons/plus.svg?react";
 import SpinnerIcon from "./assets/icons/spinner.svg?react";
 import XIcon from "./assets/icons/x.svg?react";
 import Icon from "./components/icons";
+import Bagde from "./components/bagde";
 
 export default function App() {
   return (
@@ -23,6 +24,11 @@ export default function App() {
         <Icon svg={PlusIcon} />
         <Icon svg={SpinnerIcon} animate />
         <Icon svg={XIcon} />
+      </div>
+
+      <div>
+        <Bagde variant="secundary">5</Bagde>
+        <Bagde variant="primary">2 de 5</Bagde>
       </div>
     </div>
   );
