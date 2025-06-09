@@ -5,8 +5,9 @@ import PencilIcon from "./assets/icons/pencil.svg?react";
 import PlusIcon from "./assets/icons/plus.svg?react";
 import SpinnerIcon from "./assets/icons/spinner.svg?react";
 import XIcon from "./assets/icons/x.svg?react";
-import Icon from "./components/icons";
+import Icon from "./components/icon";
 import Bagde from "./components/bagde";
+import Button from "./components/button";
 
 export default function App() {
   return (
@@ -29,6 +30,10 @@ export default function App() {
       <div>
         <Bagde variant="secundary">5</Bagde>
         <Bagde variant="primary">2 de 5</Bagde>
+      </div>
+
+      <div>
+        <Button icon={PlusIcon}>Nova Tarefa</Button>
       </div>
     </div>
   );
