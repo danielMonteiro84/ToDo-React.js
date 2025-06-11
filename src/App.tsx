@@ -10,6 +10,7 @@ import Bagde from "./components/bagde";
 import Button from "./components/button";
 import ButtonIcon from "./components/button-icon";
 import InputText from "./components/input-text";
+import InputCheckbox from "./components/input-checkbox";
 
 export default function App() {
   return (
@@ -19,7 +20,6 @@ export default function App() {
         <Text variant="body-md">Olá Mundo!</Text>
         <Text variant="body-md-bold">Olá Mundo!</Text>
       </div>
-
       <div className="flex gap-1">
         <Icon svg={TrashIcon} className="fill-pink-base" />
         <Icon svg={CheckIcon} />
@@ -28,24 +28,23 @@ export default function App() {
         <Icon svg={SpinnerIcon} animate />
         <Icon svg={XIcon} />
       </div>
-
       <div>
         <Bagde variant="secundary">5</Bagde>
         <Bagde variant="primary">2 de 5</Bagde>
       </div>
-
       <div>
         <Button icon={PlusIcon}>Nova Tarefa</Button>
       </div>
-
       <div className="flex gap-1">
         <ButtonIcon icon={TrashIcon} />
         <ButtonIcon icon={TrashIcon} variant="secundary" />
         <ButtonIcon icon={TrashIcon} variant="tertiary" />
       </div>
-
       <div>
         <InputText />
+      </div>
+      <div>
+        <InputCheckbox />
       </div>
     </div>
   );
