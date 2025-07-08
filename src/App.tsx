@@ -32,9 +32,10 @@ export default function App() {
           <Icon svg={SpinnerIcon} animate />
           <Icon svg={XIcon} />
         </div>
-        <div>
+        <div className="flex gap-1">
           <Bagde variant="secundary">5</Bagde>
           <Bagde variant="primary">2 de 5</Bagde>
+          <Bagde loading>5</Bagde>
         </div>
         <div>
           <Button icon={PlusIcon}>Nova Tarefa</Button>
@@ -43,12 +44,14 @@ export default function App() {
           <ButtonIcon icon={TrashIcon} />
           <ButtonIcon icon={TrashIcon} variant="secundary" />
           <ButtonIcon icon={TrashIcon} variant="tertiary" />
+          <ButtonIcon icon={TrashIcon} loading />
         </div>
         <div>
           <InputText />
         </div>
         <div>
           <InputCheckbox />
+          <InputCheckbox loading />
         </div>
         <div>
           <Card size="md">Olá Mundo</Card>
